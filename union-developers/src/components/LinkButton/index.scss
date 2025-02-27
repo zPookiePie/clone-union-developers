@@ -1,0 +1,96 @@
+/* estilos especiais para o botão */
+$primary-color: var(--backgroundGradientFirst);
+$secondary-color: var(--backgroundGradientSecond);
+
+:root {
+  --background: rgb(31, 29, 43);
+  --backgroundHeader: rgb(18, 17, 25);
+  --colorFontPrimary: rgb(226, 226, 226);
+  --colorParagrafoSecundary: rgb(215, 215, 215);
+  --colorsecundaryForm: rgb(189, 189, 189);
+  --colorFontWarning: rgb(235, 87, 87);
+  --backgroundgradient: 225deg, rgb(0, 72, 254) 0%, rgb(133, 29, 134) 100%;
+  --backgroundGradientFirst: rgb(0, 72, 254);
+  --backgroundGradientSecond: rgb(133, 29, 134);
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  min-width: 186px;
+  height: auto;
+  border-radius: 10px;
+  color: var(--colorFontPrimary);
+  background: linear-gradient(to right, $primary-color, $secondary-color);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.875rem;
+  box-shadow: var(--boxShadowButton);
+  transition: 0.3s ease-in-out;
+  z-index: 1;
+  border-color: transparent;
+
+  span {
+    z-index: 10;
+    font-family: var(--font-poppins), apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  &:hover {
+    border-right: 2px solid $primary-color;
+    border-left: 2px solid $secondary-color;
+    background-image: linear-gradient(to right, $secondary-color, $primary-color),
+                      linear-gradient(to right, $secondary-color, $primary-color);
+    background-size: 100% 2px;
+    background-position: 0px 100%, 0px 0px;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    border-radius: 10px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(var(--backgroundgradient));
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  &:hover::before {
+    left: 100%;
+  }
+
+  &:disabled:hover::before {
+    left: 0;
+  }
+}
+
+// Estilo invertido
+.buttonInvert {
+  @extend .button;
+  background: linear-gradient(to right, rgb(133, 29, 134), rgb(0, 72, 254));
+
+  &::before {
+    background: linear-gradient(to right, rgb(133, 29, 134), rgb(0, 72, 254));
+    border-right: 2px solid rgb(0, 72, 254);
+    border-left: 2px solid rgb(133, 29, 134);
+    left: -100%;
+  }
+
+  &:hover::before {
+    left: 0;
+    right: 100%;
+  }
+}

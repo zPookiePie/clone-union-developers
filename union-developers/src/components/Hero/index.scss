@@ -1,0 +1,143 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/principal-mobile.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    font-stretch: 100%;
+    padding: 5.6rem 1.5rem 5rem;
+    width: 100%;
+    background-position: center;
+    max-width: 100vw;
+    justify-content: center;
+    
+
+
+    @media (min-width: 640px) {
+      background-image: url(/principal-desktop.jpg);
+      background-position: center;
+    }
+
+    @media (min-width: 1023px) {
+        flex-direction: row;
+        column-gap: 1.4rem;
+    }
+}
+
+.espace {
+    padding: 56px 16px 12px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1023px) {
+        display: flex;
+        flex-direction: row;
+        column-gap: 1.4rem;
+    }
+}
+
+.grid {
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    
+
+    @media (min-width: 1023px) {
+        grid-template-columns: 3fr 2fr;
+        display: grid;
+        align-items: center;
+        font-stretch: 100%;
+        justify-content: center;
+        max-width: 1256px;
+        column-gap: 1.4rem;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    @media (min-width: 1023px) {
+        padding-top: 200px;
+    }
+
+    .title {
+        font-size: 1.6rem;
+        max-width: 383px;
+
+        @media (min-width: 768px) {
+            max-width: 550px;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: rgb(226, 226, 226);
+            box-sizing: border-box;
+            line-height: 150%;
+            
+            @media (min-width: 768px) {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+        }
+
+        strong {
+            background-image: linear-gradient(346deg, rgb(0, 72, 254) -48%, rgb(133, 29, 134) 115%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    
+
+    p {
+        margin-top: 15px;
+        font-size: 16px; 
+        color: rgb(226, 226, 226);
+        font-weight: 400;
+        box-sizing: border-box;
+        line-height: 150%;
+        max-width: 341px;
+        
+    
+        @media (min-width: 768px) { 
+            margin-top: 2.7rem;
+            font-stretch: 100%;
+            max-width: 640px;
+            font-size: 1.6rem;
+        }
+    
+    }
+}
+
+.cta-button {
+    max-width: 34.3rem;
+    min-height: 69px;
+    margin-top: 3.2rem;
+
+    @media (min-width: 1023px) {
+      padding-top: 4rem;
+    }
+}
+
+.hidden {
+    display: none;
+    
+    @media (min-width: 1023px) {
+        box-sizing: border-box;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        overflow-clip-margin: content-box;
+        overflow-x: clip;
+        overflow-y: clip;
+        width: auto;
+    }
+}

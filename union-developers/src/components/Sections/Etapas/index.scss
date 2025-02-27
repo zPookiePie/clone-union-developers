@@ -1,0 +1,100 @@
+.etapas-section {
+    width: calc(100% - 1.6rem);
+    max-width: 1256px;
+    margin: 0 auto;
+    margin-top: 5.6rem;
+    scroll-margin-block: 150px;
+
+    @media (min-width: 768px) {
+        margin-top: 153px;
+    }
+
+    .subtitle {
+        margin-top: 24px;
+        color: rgb(226, 226, 226);
+        font-size: 16px;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            margin: 40px auto;
+            font-size: 24px;
+            max-width: 855px;
+        }
+    }
+
+    .etapas-container {
+        margin: 40px auto 0px;
+        padding: 0px 1.6rem;
+
+        @media (min-width: 768px) {
+            margin: 80px auto 0px;
+            max-width: 1067px;
+        }
+
+        .etapas-wrapper {
+            position: relative;
+            width: 100%;
+            min-width: 310px;
+        }
+
+        .etapas-list {
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            gap: 32px;
+
+            li {
+                &::marker {
+                    content: none;
+                }
+            }
+
+            li:nth-child(2n+1) {
+                position: relative;
+                box-shadow: rgba(133, 29, 134, 0.4) 0px 0px 30px 0px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 63px;
+                    background-image: url(https://res.cloudinary.com/dbnq26wqe/image/upload/v1689446863/union/border-top-mobile_moemcz.svg);
+                    background-repeat: no-repeat;
+                    z-index: 1;
+                }
+            }
+
+            li:nth-child(2n) {
+                box-shadow: rgba(0, 72, 254, 0.4) 0px 0px 30px 0px;
+                position: relative;
+                left: 15%;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 63px;
+                    background-image: url(https://res.cloudinary.com/dbnq26wqe/image/upload/v1689446863/union/border-top-mobile_moemcz.svg);
+                    background-repeat: no-repeat;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+    .etapas-linha {
+        position: absolute;
+    top: 15px;
+    right: 41%;
+    width: 3px;
+    height: calc(100% - 1.5rem);
+    background: linear-gradient(75deg, rgb(0, 72, 254) 0%, rgb(133, 29, 134) 100%);
+    z-index: -1;
+    border-radius: 10px;
+    }
+}

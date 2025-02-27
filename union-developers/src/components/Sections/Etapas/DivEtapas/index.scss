@@ -1,0 +1,52 @@
+.card-etapa {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 204px;
+    height: max-content;
+    min-height: 196px;
+    background-color: rgb(18, 17, 25);
+    border-radius: 10px;
+
+    span:nth-child(1) {
+        left: -29px;
+        position: absolute;
+            top: 15px;
+        left: -50px;
+        font-size: 130px;
+        font-weight: 700;
+        letter-spacing: 3.2rem;
+        background: linear-gradient(225deg, rgb(0, 72, 254) 0%, rgb(133, 29, 134) 100%) text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    span {
+        position: absolute;
+        top: 15px;
+        left: -50px;
+        font-size: 13rem;
+        font-weight: 700;
+        letter-spacing: 3.2rem;
+        background: linear-gradient(225deg, rgb(0, 72, 254) 0%, rgb(133, 29, 134) 100%) text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .card-etapa-content {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 144px;
+        text-align: center;
+        margin: 0px auto;
+
+        h3 {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 700;
+            color: rgb(226, 226, 226);
+        }
+    }
+}

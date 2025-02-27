@@ -1,0 +1,63 @@
+.card-depoimento {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 24px 4px;
+    width: 261px;
+    height: max-content;
+    background: linear-gradient(rgb(31, 29, 43), rgb(31, 29, 43)) padding-box padding-box, linear-gradient(to right, rgb(133, 29, 134), rgb(0, 72, 254)) border-box border-box;
+    border-radius: 7px;
+    border: 2px solid transparent;
+    margin: 0px auto;
+
+    @media (min-width: 768px) {
+        padding: 28px 16px 16px;
+    }
+
+    .imagem-container {
+        position: relative;
+        height: 94px;
+        width: 94px;
+        border-radius: 50%;
+
+        .imagem-borda {
+            position: absolute;
+            height: inherit;
+            width: inherit;
+            border-radius: inherit;
+            background: linear-gradient(to right, rgb(133, 29, 134), rgb(0, 72, 254));
+
+            img {
+                position: absolute;
+                height: 90px;
+                width: 90px;
+                margin: 2px;
+                background: transparent;
+                border: 2px solid rgb(31, 29, 43);
+                border-radius: inherit;
+            }
+        }
+    }
+
+    .nome-depoente {
+        margin-top: 18px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .descricao-depoimento {
+        margin: 24px 0;
+        text-align: center;
+        font-size: 16px;
+        color: rgb(226, 226, 226);
+        line-height: 150%;
+    }
+
+    .redes-sociais {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+}

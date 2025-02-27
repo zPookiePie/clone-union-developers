@@ -1,0 +1,115 @@
+.form_content {
+    width: calc(100% - 1.6rem);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 5.6rem;
+
+    @media (min-width: 768px) {
+        margin-top: 150px;
+    }
+}
+
+.form_section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    scroll-margin-block: 150px;
+    border-radius: 10px;
+    background: linear-gradient(225deg, rgba(0, 72, 254, 0.2) 0%, rgba(133, 29, 134, 0.2) 100%);
+    //margin-top: 5.6rem;
+    padding: 32px 24px;
+
+    @media (min-width: 768px) {
+        max-width: 1042px;
+        //margin-top: 150px;
+        padding: 56px;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 110%;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            font-size: 40px;
+        }
+    }
+
+     p {
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        margin: 24px 0px;
+        max-width: 295px;
+
+        @media (min-width: 768px) {
+            font-size: 20px;
+            max-width: 430px;
+            margin-bottom: 32px;
+        }
+    }
+
+    .nav { 
+        margin: 32px 0px;
+
+        @media (min-width: 768px) {
+            height: 111px;
+        }
+
+        .stepsList {
+            display: inline-flex;
+            height: 68px;
+            gap: 2px;
+            list-style: none;
+
+            @media (min-width: 1024px) {
+                width: 100%;
+                -webkit-box-pack: center;
+                justify-content: center;
+                gap: 135px;
+            }
+        }
+    }
+
+    .requirementsList {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        list-style: none;
+
+        @media (min-width: 768px) {
+            align-self: flex-start;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @media (min-width: 768px) {
+            max-width: 930px;
+            width: 100%;
+        }
+    }
+
+    .buttonsContainer {
+        display: flex;
+        gap: 12px;
+
+        .buttonInvert, .nextButton {
+            margin-top: 18px;
+            height: 44px;
+            border-radius: 10px
+        }
+    }
+}

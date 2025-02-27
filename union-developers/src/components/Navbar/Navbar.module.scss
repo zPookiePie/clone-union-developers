@@ -1,0 +1,132 @@
+// Variável para a altura do header 
+$header-height: 70px;
+
+// Wrapper para o Navbar 
+.navbarWrapper {
+  position: relative;
+}
+
+// Cabeçalho fixo 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height; // Define uma altura fixa para o header
+  background-color: #121119; // cor de fundo do header
+  z-index: 10000;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+// Container interno centralizado 
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1.2rem;
+}
+
+// Grupo que contém o logo e o botão 
+.navGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+// Logo 
+.logo a {
+  display: inline-block;
+}
+
+// Botão do menu (hambúrguer) 
+.menuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  @media (min-width: 1150px) {
+    display: none;
+  }
+}
+
+// Linhas do botão 
+.menuLine {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+// Exemplo de estilo ativo (pode personalizar a animação) 
+.active {
+  background: linear-gradient(to right, rgb(133, 29, 134), rgb(0, 72, 254));
+  border-right: 2px solid rgb(0, 72, 254);
+}
+
+// Menu dropdown: posicionado fixo logo abaixo do header 
+.dropdownMenu {
+  position: fixed;
+  top: $header-height; // logo abaixo do header
+  left: 0;
+  width: 100%;
+  background-color: #121119;
+  padding: 1rem 1.2rem;
+  z-index: 1000;
+}
+
+// Lista de itens do menu 
+.menuList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuListDesktop {
+    display: flex;
+    flex-direction: row;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        gap: 16px;
+        padding: 0px;
+        list-style: none;
+
+        @media (max-width: 1150px) {
+          display: none;
+        }
+
+
+  li a {
+    font-family: Poppins, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2.2rem;
+    color: rgb(226, 226, 226);
+    text-rendering: optimizelegibility;
+    transition: 0.35sease-in-out;
+    position: relative;
+  }
+}
+
+// Itens do menu 
+.menuItem {
+  text-decoration: none;
+  margin: 15px 0;
+  transition: color 350ms ease;
+  font-family: Poppins, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2.2rem;
+    color: rgb(226, 226, 226);
+    text-rendering: optimizelegibility;
+    position: relative;
+}

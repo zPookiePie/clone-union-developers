@@ -1,0 +1,45 @@
+.benefits-section {
+    width: calc(100% - 1.6rem);
+    max-width: 1256px;
+    padding-top: 56px;
+    scroll-margin-block: 150px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+        padding-top: 154px;
+    }
+
+    .subtitle {
+        margin: 2.4rem auto;
+        color: rgb(226, 226, 226);
+        font-size: 16px;
+        text-align: center;
+        max-width: 343px;
+
+        @media (min-width: 768px) {
+            margin: 4rem auto;
+            font-size: 24px;
+            max-width: 855px;
+        }
+    }
+
+    .benefits-container {
+        margin-top: 40px;
+
+        @media (min-width: 768px) {    
+            margin-top: 8rem;
+            max-width: 1140px;
+            padding-left: 1.1rem;
+        }
+
+        .benefits-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            width: 100%;
+
+            @media (min-width: 768px) {
+                gap: 100px;
+            }
+        }
+    }
+}

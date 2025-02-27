@@ -1,0 +1,94 @@
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: Inter, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, sans-serif;
+  }
+  
+  .labelContainer {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 4px;
+
+    span {
+        align-self: baseline;
+        color: rgb(235, 87, 87);
+    }
+
+    label {
+        max-width: 644px;
+        font-size: 14px;
+        color: rgb(226, 226, 226);
+
+        @media (min-width: 768px) {
+            font-size: 18px;
+        }
+    }
+  }
+
+  .inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    input {
+        padding: 12px 12px 12px 12px;
+        font-size: 16px;
+        line-height: 157.5%;
+        color: rgb(226, 226, 226);
+        background: transparent;
+        border: 1px solid rgb(189, 189, 189);
+        border-radius: 10px;
+        transition: 0.1s;
+    }
+  }
+  
+  
+  .textarea {
+    min-height: 130px;
+    resize: none;
+    padding: 12px 12px 12px 12px;
+    font-size: 16px;
+    line-height: 157.5%;
+    color: rgb(226, 226, 226);
+    background: transparent;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 10px;
+    transition: 0.1s;
+
+    &::placeholder {
+        font-family: Inter, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, sans-serif;
+    }
+  }
+  
+  .radioGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: flex-start;
+  }
+  
+  .radioLabel {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 8px;
+  }
+  
+  .radioInput {
+    width: 16px;
+    height: 16px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .errorMessage {
+    font-size: 14px;
+    color: rgb(235, 87, 87);
+    align-self: flex-start;
+  }
+
+
