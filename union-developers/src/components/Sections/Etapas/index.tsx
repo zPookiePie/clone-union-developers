@@ -30,7 +30,6 @@ function Etapas () {
         <section id="etapas" className="etapas-section">
             <TituloComLinhas
                 title="Etapas"
-                className="header-section"
             />
             <p className="subtitle">Conheça as etapas do nosso processo seletivo</p>
             <div className="etapas-container">

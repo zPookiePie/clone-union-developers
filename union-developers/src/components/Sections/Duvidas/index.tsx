@@ -67,7 +67,6 @@ function Duvidas() {
     <section id="duvidas" className="duvidas-section">
         <TituloComLinhas
             title="Dúvidas"
-            className="header-section"
         />
         <div className="duvidas-container">
             <dl>
