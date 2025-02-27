@@ -2,10 +2,9 @@ import "./index.scss"
 
 interface TituloComLinhas {
     title: string;
-    className?: string;
 }
 
-function TituloComLinhas ({ title, className }: TituloComLinhas) {
+function TituloComLinhas ({ title }: TituloComLinhas) {
     return (
         <div className="header-section">
             <div className="header-line-left"></div>

@@ -1,19 +1,21 @@
 .floatingImage {
-    max-width: 100%;
+  max-width: 100%;
   
-    @media (min-width: 1024px) {
-      display: block;
-    }
+  @media (min-width: 1024px) {
+    display: block;
+  }
   
+  & {
     position: static;
     animation: moveUp 2s infinite alternate ease-in-out;
   }
+}
   
-  @keyframes moveUp {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-10px);
-    }
+@keyframes moveUp {
+  from {
+    transform: translateY(0);
   }
+  to {
+    transform: translateY(-10px);
+  }
+}
