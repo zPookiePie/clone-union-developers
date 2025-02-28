@@ -13,7 +13,7 @@ const Navbar = () => {
 
     const isSobreVisible = useElementObserver("sobre");
     const isPilaresVisible = useElementObserver("pilares");
-    const isBenefitsVisible = useElementObserver("beneficiosSection");
+    const isBenefitsVisible = useElementObserver("beneficios");
     const isStepsVisible = useElementObserver("etapas");
     const isTestimonialsVisible = useElementObserver("depoimentos");
     const isFaqVisible = useElementObserver("duvidas");

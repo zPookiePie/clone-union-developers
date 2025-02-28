@@ -59,23 +59,23 @@ function Beneficios() {
 
     return (
         <section id="beneficios" className="benefits-section">
-        <TituloComLinhas 
-            title="Benefícios" 
-        />
-        <p className="subtitle">Conheça os benefícios incríveis que o Union proporciona para seus membros!</p>
-        <div className="benefits-container">
-            <div className="benefits-grid">
-            {BeneficiosData?.map((beneficio, index) => (
-                <DivBeneficios
-                key={index}
-                alt={beneficio.alt}
-                title={beneficio.title}
-                description={beneficio.description}
-                icon={beneficio.icon}
-                />
-            ))}
+            <TituloComLinhas 
+                title="Benefícios" 
+            />
+            <p className="subtitle">Conheça os benefícios incríveis que o Union proporciona para seus membros!</p>
+            <div className="benefits-container">
+                <div className="benefits-grid">
+                {BeneficiosData?.map((beneficio, index) => (
+                    <DivBeneficios
+                    key={index}
+                    alt={beneficio.alt}
+                    title={beneficio.title}
+                    description={beneficio.description}
+                    icon={beneficio.icon}
+                    />
+                ))}
+                </div>
             </div>
-        </div>
         </section>
     )
 }
